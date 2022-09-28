@@ -7,8 +7,10 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
+/* header section  */
 nav {
   padding: 12px;
   display: grid;
@@ -45,6 +47,7 @@ nav > .menubar > .bx {
   color: white;
   font-size: 22px;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 nav > .menubar > .bx:hover {
   color: #da76ff;
@@ -106,4 +109,26 @@ nav > .hamburger > .bx {
   background-color: #1b1322;
   font-size: 30px;
   color: white;
+}
+/* main section  */
+main > .container {
+  padding: 20px;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+}
+main > .container > .swiper {
+  width: 80%;
+  height: fit-content;
+}
+main > .container > .swiper > .swiper-wrapper > .swiper-slide > img {
+  width: 100%;
+  height: fit-content;
+}
+main > .container > .swiper > .swiper-button-prev,
+.swiper > .swiper-button-next {
+  color: white;
+}
+main > .container > .swiper .swiper-pagination-bullet-active {
+  background-color: white;
 }
