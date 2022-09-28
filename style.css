@@ -2,6 +2,7 @@
   --main-bg-color: #0f0617;
 }
 body {
+  margin-top: 90px;
   background-color: var(--main-bg-color);
 }
 * {
@@ -11,8 +12,17 @@ body {
   font-family: sans-serif;
 }
 /* header section  */
+header {
+  background-color: var(--main-bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.6s;
+  z-index: 2;
+}
 nav {
-  padding: 12px;
+  padding: 15px;
   display: grid;
   grid-template-columns: repeat(4, 8% 34% 50% 8%);
 }
@@ -75,6 +85,7 @@ nav > .searchbar > .login {
   background-color: var(--main-bg-color);
   color: white;
   transition: 0.5s ease;
+  cursor: pointer;
   font-size: 12px;
   font-weight: 700;
 }
@@ -88,6 +99,7 @@ nav > .searchbar > .buy_plan {
   border-radius: 5px;
   background-color: #8230c6;
   color: white;
+  cursor: pointer;
   font-size: 12px;
   transition: 0.5s ease;
   font-weight: 700;
@@ -102,6 +114,7 @@ nav > .searchbar > .buy_plan > .bx {
 }
 nav > .hamburger {
   text-align: center;
+  cursor: pointer;
 }
 nav > .hamburger > .bx {
   border-radius: 50px;
@@ -112,7 +125,6 @@ nav > .hamburger > .bx {
 }
 /* main section  */
 main > .container {
-  padding: 20px;
   background-color: transparent;
   width: 100%;
   height: auto;
@@ -124,6 +136,7 @@ main > .container > .swiper {
 main > .container > .swiper > .swiper-wrapper > .swiper-slide > img {
   width: 100%;
   height: fit-content;
+  cursor: pointer;
 }
 main > .container > .swiper > .swiper-button-prev,
 .swiper > .swiper-button-next {
@@ -131,4 +144,36 @@ main > .container > .swiper > .swiper-button-prev,
 }
 main > .container > .swiper .swiper-pagination-bullet-active {
   background-color: white;
+}
+main > .card_container {
+  display: grid;
+  padding: 30px 40px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+main > .card_container > .card_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: 1/1/2/7;
+}
+main > .card_container > .card_heading > h2 {
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+}
+main > .card_container > .card_heading > h4 {
+  font-size: 14px;
+  color: #a486f9;
+  font-weight: 550;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+main > .card_container > .cards {
+  border-radius: 8px;
+}
+main > .card_container > .cards > img {
+  width: 100%;
+  border-radius: 8px;
 }
