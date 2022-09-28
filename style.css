@@ -147,7 +147,7 @@ main > .container > .swiper .swiper-pagination-bullet-active {
 }
 main > .card_container {
   display: grid;
-  padding: 30px 40px;
+  padding: 30px 40px 0px 40px;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
 }
