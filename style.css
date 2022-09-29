@@ -70,6 +70,7 @@ nav > .searchbar {
 nav > .searchbar > input {
   margin-left: 15%;
   width: 38%;
+  color: white;
   border-radius: 5px;
   padding: 10px;
   background-color: var(--main-bg-color);
@@ -181,6 +182,7 @@ hr {
   margin-top: 40px;
   border: 1px solid rgb(27, 19, 34, 0.8);
 }
+/* footer section  */
 
 footer > .footerbox {
   width: 85%;
@@ -229,7 +231,7 @@ footer > .footerbox > .media_connect > #twitter:hover {
 footer > .footerbox > .media_connect > #youtube:hover {
   background-color: #c22d2a;
 }
-footer > .footerbox > .site_info{
+footer > .footerbox > .site_info {
   margin: 20px;
 }
 footer > .footerbox > .site_info > a {
