@@ -1,0 +1,93 @@
+/* login page css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  margin-top: 50px;
+  background-color: #0f0617;
+}
+.login {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+.login > h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.login > p {
+  margin: 25px 0px;
+  color: #cfcdcb;
+  line-height: 20px;
+  font-size: 15px;
+}
+.media_icons {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.login .bx {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+.login #apple {
+  background-color: white;
+  color: black;
+}
+.login #google {
+  background-color: white;
+  color: rgb(160, 4, 4);
+}
+.login #fb {
+  background-color: rgb(23, 122, 238);
+}
+.login #twitter {
+  background-color: rgb(34, 163, 239);
+}
+.login img {
+  background-color: white;
+  width: 45px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.login > input {
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 90%;
+  margin-bottom: 50px;
+  border-bottom: 1px solid white;
+}
+.login > a {
+  color: #a486f9;
+  text-decoration: none;
+  font-size: 13px;
+}
+.login > .login_button {
+  border: 1px solid #cfcdcb;
+  width: 80%;
+  padding: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #cfcdcb;
+}
+.login > h5 {
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+}
