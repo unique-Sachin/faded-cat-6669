@@ -79,18 +79,18 @@ nav > .searchbar > input {
 nav > .searchbar > input:hover {
   border: 1px solid #545057;
 }
-nav > .searchbar > .login {
+nav > .searchbar > a > .login {
   border: 1px solid white;
   padding: 10px 12px;
   border-radius: 5px;
   background-color: var(--main-bg-color);
-  color: white;
   transition: 0.5s ease;
   cursor: pointer;
   font-size: 12px;
+  color: white;
   font-weight: 700;
 }
-nav > .searchbar > .login:hover {
+nav > .searchbar > a > .login:hover {
   background-color: white;
   color: black;
 }

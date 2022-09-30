@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login to ZEE5 & Watch the Best Shows, Movies, News and More</title>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -24,11 +24,26 @@
         <i id="fb" class="bx bxl-facebook"></i>
         <i id="twitter" class="bx bxl-twitter"></i>
       </div>
-      <input type="text" placeholder="Email ID or Mobile Number" />
+      <p id="or">or</p>
+      <input
+        id="loginInput"
+        oninput="inputFun()"
+        type="text"
+        placeholder="Email ID or Mobile Number"
+      />
       <a href="#">Forgot Password?</a>
-      <button class="login_button">Login</button>
+      <button
+        onclick="loginFun()"
+        id="login_button"
+        disabled="disabled"
+        class="login_button"
+      >
+        Login
+      </button>
       <h5>New to ZEE5?</h5>
-      <a href="#">Register</a>
+      <a href="signup.html">Register</a>
     </div>
   </body>
 </html>
+
+<script src="JS/login.js"></script>

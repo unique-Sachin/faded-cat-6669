@@ -43,10 +43,6 @@ body {
   background-color: white;
   color: black;
 }
-.login #google {
-  background-color: white;
-  color: rgb(160, 4, 4);
-}
 .login #fb {
   background-color: rgb(23, 122, 238);
 }
@@ -61,12 +57,22 @@ body {
   margin: 0 15px;
   cursor: pointer;
 }
+.login > #or {
+  padding: 10px;
+  display: inline;
+  border-radius: 50px;
+  color: white;
+  /* width: 100%; */
+  background-color: rgb(29, 21, 36);
+}
 .login > input {
-  padding: 20px;
+  padding: 10px;
   background-color: transparent;
   color: white;
   border: none;
-  width: 90%;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
   margin-bottom: 50px;
   border-bottom: 1px solid white;
 }
@@ -82,7 +88,7 @@ body {
   margin-top: 40px;
   margin-bottom: 20px;
   border-radius: 6px;
-  cursor: pointer;
+  cursor: not-allowed;
   background-color: transparent;
   color: #cfcdcb;
 }
