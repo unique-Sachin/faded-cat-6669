@@ -10,8 +10,8 @@ body {
   background-color: #0f0617;
 }
 .login {
-  width: 30%;
-  margin: auto;
+  width: 25%;
+  margin: 50px auto;
   text-align: center;
 }
 .login > h3 {
@@ -43,10 +43,6 @@ body {
   background-color: white;
   color: black;
 }
-.login #google {
-  background-color: white;
-  color: rgb(160, 4, 4);
-}
 .login #fb {
   background-color: rgb(23, 122, 238);
 }
@@ -61,12 +57,22 @@ body {
   margin: 0 15px;
   cursor: pointer;
 }
+.login > #or {
+  padding: 10px;
+  display: inline;
+  border-radius: 50px;
+  color: white;
+  /* width: 100%; */
+  background-color: rgb(29, 21, 36);
+}
 .login > input {
-  padding: 20px;
+  padding: 10px;
   background-color: transparent;
   color: white;
   border: none;
-  width: 90%;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
   margin-bottom: 50px;
   border-bottom: 1px solid white;
 }
@@ -77,12 +83,13 @@ body {
 }
 .login > .login_button {
   border: 1px solid #cfcdcb;
-  width: 80%;
-  padding: 15px;
+  width: 100%;
+  padding: 18px;
+  margin: 0px auto;
   margin-top: 40px;
   margin-bottom: 20px;
   border-radius: 6px;
-  cursor: pointer;
+  cursor: not-allowed;
   background-color: transparent;
   color: #cfcdcb;
 }
@@ -90,4 +97,13 @@ body {
   color: white;
   font-size: 12px;
   padding: 10px;
+}
+
+@media all and (min-width: 300px) and (max-width: 700px) {
+  .login {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+  }
 }
