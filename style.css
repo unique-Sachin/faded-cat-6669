@@ -259,6 +259,7 @@ footer > .footerbox > .show-categories > .shows > .show_heading {
   color: #f3f0ed;
   font-size: 12px;
   letter-spacing: 1px;
+  display: inline;
   line-height: 30px;
   cursor: pointer;
 }
