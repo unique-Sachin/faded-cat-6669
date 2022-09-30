@@ -11,9 +11,23 @@
     <div class="otp">
       <h3>Verify Mobile Number</h3>
       <p>An OTP has been sent to the entered mobile number</p>
-      <input type="number" name="" id="num" placeholder="Enter OTP" />
-      <button onclick="verifyFun()" class="verify_button">Verify</button>
+      <input
+        oninput="inputFun()"
+        type="number"
+        name=""
+        id="num"
+        placeholder="Enter OTP"
+      />
+      <button
+        id="otp_button"
+        onclick="verifyFun()"
+        class="verify_button"
+        disabled="disabled"
+      >
+        Verify
+      </button>
+      <h4 id="invalidOtp">Either OTP is not valid or has expired</h4>
     </div>
   </body>
 </html>
-<script src=""></script>
+<script src="JS/otp.js"></script>

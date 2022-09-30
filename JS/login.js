@@ -1,14 +1,11 @@
 function loginFun() {
-    // setTimeout(() => {
-    //   window.location.href = "otp.html";
-    // }, 1000);
-    // let mobileNumber = document.querySelector("#mobileNumber").value;
-    alert("its working")
+  setTimeout(() => {
+    window.location.href = "otp.html";
+  }, 1000);
 }
 
-
 function inputFun() {
-  // here mobileNumber is the ID of input tag and login_button is the ID of login button
+  // here loginInput is the ID of input tag and login_button is the ID of login button
   if (loginInput.value.length > 0) {
     login_button.style.cursor = "pointer";
     login_button.style.backgroundColor = "rgb(128, 53, 194)";
@@ -21,5 +18,5 @@ function inputFun() {
     login_button.style.backgroundColor = "transparent";
     login_button.style.color = "#cfcdcb";
     login_button.style.border = "1px solid #cfcdcb";
-    }
+  }
 }
