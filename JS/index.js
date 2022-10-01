@@ -18,3 +18,9 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+function userMenu() {
+  console.log("chal raha hai")
+  
+}

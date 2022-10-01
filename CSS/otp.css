@@ -22,8 +22,13 @@ body {
 .otp > p {
   margin: 25px auto;
   color: white;
-  width: 70%;
+  width: 80%;
   line-height: 20px;
+  font-size: 13px;
+}
+.otp > p > a {
+  color: #a486f9;
+  text-decoration: none;
   font-size: 13px;
 }
 .otp > input {
@@ -58,7 +63,38 @@ body {
   font-weight: 600;
   line-height: 20px;
   padding: 20px;
-  margin:100px auto;
+  margin: 70px auto;
+  animation: scale-up-bottom 1s ease-in-out 0.3s both;
+  display: none;
+}
+
+@-webkit-keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+@keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
 }
 
 @media all and (min-width: 300px) and (max-width: 600px) {
