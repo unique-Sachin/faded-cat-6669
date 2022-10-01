@@ -94,6 +94,44 @@ nav > .searchbar > a > .login:hover {
   background-color: white;
   color: black;
 }
+/* this style tag is only for home.html */
+nav > .searchbar > #user {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: -20px;
+}
+nav > .searchbar > #user > #userid {
+  font-size: 25px;
+  width: 55%;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  background-color: #1b1322;
+  transition: 0.5s ease;
+}
+nav > .searchbar > #user > #userid:hover {
+  background-color: rgb(61, 54, 67);
+}
+nav > .searchbar > #user > #usertext {
+  visibility: hidden;
+  opacity: 0;
+  padding: 1px 8px;
+  z-index: 1;
+  border-radius: 2px;
+  background-color: rgb(61, 54, 67);
+  font-size: 12px;
+  transition: 0.8s ease;
+}
+nav > .searchbar > #user > #userid:hover ~ #usertext {
+  visibility: visible;
+  opacity: 1;
+}
+/* this style tag is only for home.html */
 nav > .searchbar > .buy_plan {
   padding: 10px 12px;
   border: none;

@@ -1,13 +1,19 @@
 function verifyFun() {
-  if (num.value == 1234) {
+  if (num.value == 1234 || num.value == 5678) {
     setTimeout(() => {
-      window.location.href = "index.html";
+      window.location.href = "home.html";
     }, 1000);
   } else {
-    alert("Invalid otp");
+    setTimeout(() => {
+      invalidOtp.style.display = "block";
+    }, 1000);
+    setTimeout(() => {
+      window.location.reload();
+    }, 4000);
   }
 }
 
+mobileNumber.innerText = localStorage.getItem("signupNumber");
 function inputFun() {
   // here mobileNumber is the ID of input tag and login_button is the ID of login button
   if (num.value.length == 4) {
