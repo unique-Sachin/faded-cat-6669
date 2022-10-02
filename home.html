@@ -37,12 +37,34 @@
             placeholder="Search for Movies, Shows, Channels etc."
           />
           <div id="user">
-            <span onclick="userMenu()" id="userid"><i class="bx bx-user"></i></span>
+            <span onclick="userMenu()" id="userid"
+              ><i class="bx bx-user"></i
+            ></span>
             <span id="usertext">My Profile</span>
           </div>
-          <div>
-            
+          <div id="userDetails">
+            <button onclick="cutDiv()">X</button>
+            <div id="userNumber">
+              <i class="bx bx-user"></i>
+              <span id="number"></span>
+            </div>
+            <div id="dropdown">
+              <input
+                type="text"
+                class="textBox"
+                placeholder="My Account"
+                readonly
+              />
+              <div class="option">
+                <div><a href="#">My Watchlist</a></div>
+                <div><a href="#">My Subscription</a></div>
+                <div><a href="#">My Rentals</a></div>
+                <div><a href="#">My transactions</a></div>
+                <div><a href="index.html">Logout</a></div>
+              </div>
+            </div>
           </div>
+
           <button class="buy_plan"><i class="bx bxs-crown"></i>BUY PLAN</button>
         </div>
         <div class="hamburger">
@@ -50,6 +72,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <!-- slider part  -->
       <div class="container">
