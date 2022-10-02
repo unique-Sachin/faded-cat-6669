@@ -1,9 +1,9 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   loop: true,
 
   // If we need pagination
@@ -18,9 +18,15 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
+number.innerText = "+91 " + localStorage.getItem("signupNumber");
 
 function userMenu() {
-  console.log("chal raha hai")
-  
+  userDetails.style.display = "block";
 }
+function cutDiv() {
+  userDetails.style.display = "none";
+}
+
+dropdown.onclick = function () {
+  dropdown.classList.toggle("active");
+};

@@ -1,6 +1,6 @@
-/* for tablet  */
+/* for tablet and mobile */
 @media all and (min-width: 300px) and (max-width: 700px) {
-  body{
+  body {
     margin-top: 100px;
   }
   header {
@@ -26,9 +26,6 @@
     display: none;
   }
   nav > .searchbar > input {
-    display: none;
-  }
-  nav > .searchbar > .login {
     display: none;
   }
   nav > .searchbar > .buy_plan {
@@ -72,29 +69,49 @@
     display: none;
   }
   footer > .footerbox > .media_connect > img {
-  margin: 10px auto;
-  width: 70%;
-  cursor: pointer;
-}
-footer > .footerbox > .media_connect > .bx {
-  margin-left: 0px;
-  width: 45px;
-  margin:10px auto;
-}
-footer > .footerbox > .site_info{
-  margin: 20px;
-  text-align: center;
-  line-height: 40px;
-}
-footer > .footerbox > .show-categories {
-  display: grid;
-  margin: 50px 0px;
-  grid-template-columns: repeat(2, 1fr);
-}
-footer > .footerbox > p {
-  color: #7a7977;
-  width: 100%;
-  font-size: 13px;
-  font-weight: 500;
-}
+    margin: 10px auto;
+    width: 70%;
+    cursor: pointer;
+  }
+  footer > .footerbox > .media_connect > .bx {
+    margin-left: 0px;
+    width: 45px;
+    margin: 10px auto;
+  }
+  footer > .footerbox > .site_info {
+    margin: 20px;
+    text-align: center;
+    line-height: 40px;
+  }
+  footer > .footerbox > .show-categories {
+    display: grid;
+    margin: 50px 0px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer > .footerbox > p {
+    color: #7a7977;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  /* this style tag is only for home.html */
+  nav > .searchbar > #user {
+    margin-top: 5px;
+  }
+  nav > .searchbar > #userDetails {
+    width: 360px;
+    top: 75px;
+    border-radius: 0;
+    right: 0px;
+  }
+  #userDetails > button {
+    top: -40px;
+    right: 264px;
+  }
+  #dropdown {
+    width: 360px;
+    top: 60px;
+    right: 0px;
+  }
 }

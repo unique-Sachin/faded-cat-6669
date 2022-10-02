@@ -131,6 +131,107 @@ nav > .searchbar > #user > #userid:hover ~ #usertext {
   visibility: visible;
   opacity: 1;
 }
+nav > .searchbar > #userDetails {
+  width: 280px;
+  height: 60px;
+  position: absolute;
+  top: 80px;
+  border-radius: 5px 5px 0 0;
+  display: none;
+  right: 190px;
+  background-color: #1d1524;
+}
+#userDetails > button {
+  color: white;
+  margin-top: -20px;
+  position: absolute;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 50px;
+  top: -41px;
+  background-color: #1b1322;
+  font-size: 20px;
+  right: 121px;
+}
+#userNumber > .bx {
+  font-size: 25px;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0px 25px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: rgb(61, 54, 67);
+}
+#userNumber > #number {
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+#dropdown {
+  width: 280px;
+  height: 60px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  background-color: #0f0617;
+}
+#dropdown::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: 20px;
+  top: 15px;
+  z-index: 1111;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+#dropdown.active::before {
+  transform: rotate(-225deg);
+  top: 25px;
+}
+#dropdown input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0617;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+}
+#dropdown .option {
+  position: absolute;
+  top: 48px;
+  background-color: #0f0617;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  display: none;
+}
+#dropdown.active .option {
+  display: block;
+}
+#dropdown .option div {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+#dropdown .option div:hover {
+  background-color: #1d1524;
+}
+#dropdown .option div a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px;
+  font-weight: 600;
+}
 /* this style tag is only for home.html */
 nav > .searchbar > .buy_plan {
   padding: 10px 12px;
